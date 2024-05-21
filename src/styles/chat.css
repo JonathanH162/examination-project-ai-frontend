@@ -1,0 +1,201 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-image: url(src/images/boardgame.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
+  color: #d0eef0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 0;
+  width: 1000px;
+  height: 700px;
+  overflow-y: auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #d0eef0;
+  position: relative;
+  align-items: center;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  min-width: 40%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #39cbdb;
+  color: black;
+}
+
+.chat-bubble.question {
+  background-color: #a06ee1;
+  color: black;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #d0eef0;
+  position: sticky;
+  bottom: 0;
+}
+
+.chat-input-container input {
+  flex: 1;
+  width: 70%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.chat-input-container button {
+  padding: 10px;
+  font-size: 16px;
+  background: linear-gradient(45deg, #7a0eab, #f06595, #5fc3d7);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.chat-input-container button:hover {
+  background: linear-gradient(45deg, #b843ed, #ff80ac, #8febfe);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #d0eef0;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 500px;
+  height: auto;
+  max-height: 120px;
+}
+.navbar-invisible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 5px;
+  width: 500px;
+  height: auto;
+}
+
+.FileConverter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.FileConverter form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.FileConverter input[type="file"] {
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.add-file-button {
+  padding: 10px 30px;
+  background: linear-gradient(45deg, #7a0eab, #f06595, #5fc3d7);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.view-addFile-button {
+  padding: 10px 30px;
+  background: linear-gradient(45deg, #7a0eab, #f06595, #5fc3d7);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 60px;
+  width: 200px;
+  font-size: large;
+}
+
+.FileConverter button:hover {
+  background: linear-gradient(45deg, #b843ed, #ff80ac, #8febfe);
+}
+
+.return-click {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.response-message-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.response-message {
+  color: #008000;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.response-message-error {
+  color: #ff0000;
+  margin-top: 10px;
+  font-weight: bold;
+}
